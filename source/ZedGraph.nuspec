@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ZedGraph</id>
-    <version>5.1.7</version>
+    <version>6.0.0</version>
     <title />
     <authors>ZedGraph Project</authors>
     <owners />
@@ -14,17 +14,8 @@
     <iconUrl>https://raw.githubusercontent.com/ZedGraph/ZedGraph/master/logo-200x200.png</iconUrl>
     <language />
 
-    <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net35" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net40" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net45" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net46" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net47" />
-    </frameworkAssemblies>
     <dependencies>
-      <group targetFramework="netstandard2.0">
-        <dependency id="System.Drawing.Common" version="4.5.0" />
-      </group>
+        <dependency id="System.Drawing.Common" version="6.0.0" />
     </dependencies>
   </metadata>
   <files>

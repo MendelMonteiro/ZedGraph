@@ -24,15 +24,15 @@
     <MsBuild BuildInParallel="True" Projects="@(SolutionToBuild)" StopOnFirstFailure="True" />
   </Target>
 
-  <Target Name="NuGetPack" DependsOnTargets="Build;GetVersion">
-    <Exec Command='nuget pack ZedGraph.nuspec -Version $(GitVersion_NuGetVersion) -OutputDirectory "$(BuildDirectory)"'/>
-    <Exec Command='nuget pack ZedGraph.WinForms.nuspec -Version $(GitVersion_NuGetVersion) -OutputDirectory "$(BuildDirectory)"'/>
-  </Target>
+  <!-- <Target Name="NuGetPack" DependsOnTargets="Build;GetVersion"> -->
+  <!--   <Exec Command='nuget pack ZedGraph.nuspec -Version $(GitVersion_NuGetVersion) -OutputDirectory "$(BuildDirectory)"'/> -->
+  <!--   <Exec Command='nuget pack ZedGraph.WinForms.nuspec -Version $(GitVersion_NuGetVersion) -OutputDirectory "$(BuildDirectory)"'/> -->
+  <!-- </Target> -->
 
-  <Target Name="Package" DependsOnTargets="NuGetPack" />
+  <!-- <Target Name="Package" DependsOnTargets="NuGetPack" /> -->
 
   <PropertyGroup>
     <UpdateAssemblyInfo>false</UpdateAssemblyInfo>
   </PropertyGroup>
-  <Import Project="packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets" />
+  <!-- <Import Project="packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets" /> -->
 </Project>
